@@ -8,9 +8,9 @@ while counter < 5:
 
 print(f"Counter at {counter}.")
 
-word1 = "rule"
+word1 = "luer"
 word2 = counter
-word3 = "header.txt"
+word3 = "template.txt"
 
 output = "Hello World"
 
