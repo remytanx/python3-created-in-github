@@ -17,6 +17,7 @@ def number(limit):
         word2 = str(counter).zfill(3)
         word3 = "template.txt"
         filename = word1 + "-" + word2 + "-" + word3
+        statement = templateInFile()
         # print(f"Counter at {counter}.")
         # print(f"Counter at {word}.")
         # Printing out the sample filename by concentating in an output
@@ -25,6 +26,7 @@ def number(limit):
         # print(f"Filename is {filename}")
 
         target = open(filename,'w')
+        target.write(statement)
         target.close()
         counter = counter + 1
 
@@ -70,6 +72,12 @@ def leadZeroTest():
 
     # Printing stored variable and this is in string.
     print(f"The word is {word}.")
+
+def templateInFile():
+    content="""{
+    {"name":"lure","length":1,"type":1,"numRange":1,"minRange0":1,"maxRange0":1},
+}"""
+    return content
 
 limit = input(">")
 # createFile()
