@@ -16,9 +16,16 @@ def number(limit):
         word1 = "luer"
         word2 = str(counter).zfill(3)
         word3 = "template.txt"
+        filename = word1 + "-" + word2 + "-" + word3
         # print(f"Counter at {counter}.")
         # print(f"Counter at {word}.")
-        print(f"{word1}-{word2}-{word3}")
+        # Printing out the sample filename by concentating in an output
+        # print(f"{word1}-{word2}-{word3}")
+        # Printing out the sample filename from a single string
+        # print(f"Filename is {filename}")
+
+        target = open(filename,'w')
+        target.close()
         counter = counter + 1
 
     print(f"Counter at {counter}.")
@@ -27,11 +34,6 @@ def number(limit):
     
     # return counter
     return word
-
-limit = input(">")
-
-number(limit)
-# counter = number()
 
 def concat(limit):
     # Test strings to concentate.
@@ -46,9 +48,13 @@ def concat(limit):
     # print(f"This is {createfile}")
 
 def createFile():
+
+    # number(limit)
+    
     # This is to create file and it works. Commented to test the writing and formatting of filename.
     # target = open(createfile,'w')
     # target.close()
+    
     pass
 
 def leadZeroTest():
@@ -64,5 +70,10 @@ def leadZeroTest():
 
     # Printing stored variable and this is in string.
     print(f"The word is {word}.")
+
+limit = input(">")
+# createFile()
+number(limit)
+# counter = number()
 
 print("Bye bye World!")
