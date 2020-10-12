@@ -75,7 +75,7 @@ def leadZeroTest():
 
 def templateInFile():
     content="""{
-    {"name":"lure","length":1,"type":1,"numRange":1,"minRange0":1,"maxRange0":1},
+    {"name":"lure","type":1,"length":1,"numRange":1,"minRange0":1,"maxRange0":1},
 }"""
     return content
 

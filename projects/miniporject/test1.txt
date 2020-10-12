@@ -1,0 +1,3 @@
+DI001/001;Flag;
+DI002/001;Type;
+DI002/002;Status;
