@@ -15,8 +15,15 @@ def readFile(file):
 def assignToList(input):
     # pass
     text = input.read()
-    text = str.replace('\n',';')
-    tList = text.split(";")
+    text = text.replace('\n','')
+    out = open("out1.txt",'w')
+    out.write(text)
+    out.close()
+    print(text)
+    tList = text.split(';')
+    # print(tList)
+    # print(f"Length of list: {len(tList)}")
+    tList.pop()
     # tList = re.split(';|\n',text)
     return tList
 
