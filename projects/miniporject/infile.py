@@ -1,7 +1,7 @@
 import re
 
 print("Hello World!")
-path = 'projects\\miniporject\\test1.txt'
+path = 'rules_generation\\test1.txt'
 # target = open(path)
 input = ""
 list1 = ""
@@ -15,21 +15,21 @@ def readFile(file):
 def assignToList(input):
     # pass
     text = input.read()
-    text = text.replace('\n','')
+    text = text.replace('\n','\t')
     out = open("out1.txt",'w')
     out.write(text)
     out.close()
     print(text)
-    tList = text.split(';')
-    # print(tList)
-    # print(f"Length of list: {len(tList)}")
+    tList = text.split('\t')
+    print(tList)
+    print(f"Length of list: {len(tList)}")
     tList.pop()
-    # tList = re.split(';|\n',text)
+    tList = re.split(';|\n',text)
     return tList
 
 input = readFile(path)
 list1 = assignToList(input)
-print(input.read())
-print(list1)
+# print(input.read())
+# print(list1)
 # print(dir(input))
 print("Bye bye World!")
