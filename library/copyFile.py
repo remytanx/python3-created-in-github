@@ -13,6 +13,8 @@ print("Hello World!")
 if(uname.node == "P_IFSLT861"):
     # path = "C:\\Users\\kht79\\Documents\\Test Src Folder"
     path = "projects\\miniproject"
+elif(uname.node == "DESKTOP-OK52HHN"):
+    path = "projects\\miniproject"
 else:
     print("Machine not found!")
 
@@ -27,10 +29,14 @@ print(os.getcwd() + "\n")
 
 # shutil.copy2('/src/dir/file.ext', '/dst/dir/newname.ext') # complete target filename given
 # shutil.copy2('/src/file.ext', '/dst/dir') # target filename is /dst/dir/file.ext
+# projects\miniproject\Test Src Folder
+src = "C:\\Users\\kht79\\Documents\\Hello World\\VSC-Workspaces\\git-python3\\python3-created-in-github\\projects\\miniproject\\Test Src Folder"
+# src = "projects\\miniproject\\Test Src Folder"
+dst = "C:\\Users\\kht79\\Documents\\Hello World\\VSC-Workspaces\\git-python3\\python3-created-in-github\\projects\\miniproject\\Test Dst Folder"
+# dst = "projects\\miniproject\\Test Dst Folder"
 
-src = "projects\\miniproject\\Test Src Folder"
-dst = "projects\\miniproject\\Test Dst Folder"
-shutil.copy2(src, dst)
+# copytree is to copy the whole directory
+shutil.copytree(src, dst)
 
 print("Done copying...")
 
