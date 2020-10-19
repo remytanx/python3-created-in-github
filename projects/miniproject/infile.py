@@ -1,7 +1,7 @@
 import re
 
 print("Hello World!")
-path = 'rules_generation\\test1.txt'
+path = "projects\\miniproject\\infile.txt"
 # target = open(path)
 input = ""
 list1 = ""
