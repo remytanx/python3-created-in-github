@@ -1,11 +1,7 @@
 import re
 
 print("Hello World!")
-<<<<<<< HEAD
-path = 'projects\\miniproject\\infile.txt'
-=======
 path = "projects\\miniproject\\infile.txt"
->>>>>>> c3977d103af5f80788a50b495fdaf8673e9bff0b
 # target = open(path)
 input = ""
 list1 = ""
