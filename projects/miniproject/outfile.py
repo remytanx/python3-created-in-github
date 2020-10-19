@@ -1,6 +1,13 @@
+import os.path
+from infile import readFile
+
 print("Hello World!")
+
 counter = 0
 limit = 0
+inPath = "projects\\miniproject\\infile.txt"
+outPath = "projects\\miniproject\\outfiles"
+
 
 def number(limit):
     # This is to increment the number in the filename.
@@ -9,14 +16,15 @@ def number(limit):
     print(f"Counter at {counter}.")
     print(f"Limit at {limit}")
     # print(f"Counter at {word}.")
-
+    
     # This is the loop for the number of files.
     # while counter < 10:
-    while int(counter) < int(limit):
+    while int(counter) <= int(limit):
         word1 = "luer"
         word2 = str(counter).zfill(3)
         word3 = "template.txt"
         filename = word1 + "-" + word2 + "-" + word3
+        folderFile = os.path.join(outPath,filename)
         statement = templateInFile()
         # print(f"Counter at {counter}.")
         # print(f"Counter at {word}.")
@@ -25,7 +33,7 @@ def number(limit):
         # Printing out the sample filename from a single string
         # print(f"Filename is {filename}")
 
-        target = open(filename,'w')
+        target = open(folderFile,'w')
         target.write(statement)
         target.close()
         counter = counter + 1
@@ -79,7 +87,9 @@ def templateInFile():
 }"""
     return content
 
-limit = input(">")
+readFile(inPath)
+
+limit = input("Number of files > ")
 # createFile()
 number(limit)
 # counter = number()
