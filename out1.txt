@@ -1,1 +1,0 @@
-DI001/001	Flag	DI002/001   Type	DI002/002	Status	DI002/003	Health Point	DI002/004	Mana Point	DI002/005	Player	DI002/006	Fighter Barbarian	DI002/007	Female Witch	DI002/008	Weapon Type	DI002/009	Male Wizard	DI002/010	Goblin King	DI002/011	King Shaman	DI002/012	Lizardman
