@@ -1,30 +1,33 @@
 import os.path
-from infile import readFile, assignToList, readFileV2
+from infile import readFile
 
-print("Hello World!")
+print("Hello World! outfile.py")
 
 counter = 0
 limit = 0
-inPath = "projects\\miniproject\\infile.txt"
-outPath = "projects\\miniproject\\outfiles"
+inPath = ""
+outPath = ""
+iList = {}
 
-
-def number(limit):
+def number(limit,iList):
     # This is to increment the number in the filename.
-    counter = 1
-    word = str(counter).zfill(3)
-    print(f"Counter at {counter}.")
-    print(f"Limit at {limit}")
+    counter = 0
+    # word = str(counter).zfill(3)
+    # print(f"Counter at {counter}.")
+    # print(f"Limit at {limit}")
     # print(f"Counter at {word}.")
-    
+
     # This is the loop for the number of files.
     # while counter < 10:
-    while int(counter) <= int(limit):
-        word1 = "luer"
-        word2 = str(counter).zfill(3)
-        word3 = "template.txt"
+    # while int(counter) < int(limit):
+    for x, y in iList.items():
+        word1 = "rule"
+        # word2 = str(counter).zfill(3)
+        # word3 = "template.txt"
+        word2 = x
+        word3 = y
         filename = word1 + "-" + word2 + "-" + word3
-        folderFile = os.path.join(outPath,filename)
+        folderFile = os.path.join(outPath, filename)
         statement = templateInFile()
         # print(f"Counter at {counter}.")
         # print(f"Counter at {word}.")
@@ -43,11 +46,11 @@ def number(limit):
     # print(f"Counter at {word}.")
     
     # return counter
-    return word
+    # return word
 
 def concat(limit):
     # Test strings to concentate.
-    word1 = "luer"
+    word1 = "rule"
     word2 = limit
     word3 = "template.txt"
 
@@ -83,30 +86,26 @@ def leadZeroTest():
 
 def templateInFile():
     content="""{
-    {"name":"lure","type":1,"length":1,"numRange":1,"minRange0":1,"maxRange0":1},
+    {"name":"luer","type":1,"length":1,"numRange":1,"minRange0":1,"maxRange0":1},
 }"""
     return content
 
-iList = {}
-# iList = readFile(inPath)
-iList = readFileV2(inPath)
-
-print("*** *** ***")
-print(iList)
-
-# for key in iList.readlines():
-#     print(key)
-
-# rList = {}
-# rList = assignToList(iList)
-print("### ### ###")
-# print(rList)
-
-
+# readFile(inPath)
+iList = readFile(inPath)
+# text = open(iList,'r')
+# print(text)
+# print(iList)
 
 # limit = input("Number of files > ")
+
+limit = len(iList)
+
+print(f"Length: {len(iList)}")
+
 # createFile()
-# number(limit)
+
+number(limit,iList)
+
 # counter = number()
 
-print("Bye bye World!")
+print("Bye bye World! outfile.py")

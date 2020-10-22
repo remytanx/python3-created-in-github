@@ -1,0 +1,13 @@
+001-001	Flag
+002-001   Type
+002-002	Status
+002-003	Health Point
+002-004	Mana Point
+002-005	Player
+002-006	Fighter Barbarian
+002-007	Female Witch
+002-008	Weapon Type
+002-009	Male Wizard
+002-010	Goblin King
+002-011	King Shaman
+002-012	Lizardman

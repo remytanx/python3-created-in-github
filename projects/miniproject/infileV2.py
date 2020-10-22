@@ -1,15 +1,10 @@
 import re
 
-print("Hello World!")
-
-# dictTest = {"test1":"OK1", "test2":"OK2", "test3":"OK3"}
-# print(f"dictTest: {dictTest}")
-
-# inPath = "projects/miniproject/dict.txt"
-# inPath = "projects/miniproject/infile.txt"
-inPath = "projects\miniproject\\formatted infile.txt"
+print("Hello World! infile.py")
+inPath = ''
 
 d = {}
+o = {}
 counter = 1
 
 def readFile(input):
@@ -18,13 +13,17 @@ def readFile(input):
             line = re.sub(r"\s{2,}", "\t", line)
             # print(line)
             line = line.replace(' ', '-')
+            print(line)
             # line = line.rstrip("\n").split("\t")
             key, value = line.rstrip("\n").split('\t')
             d[key] = value
             # print(f"{counter}. {line}")
             # counter = counter + 1
-readFile(inPath)
-print (d)
+        return d
 
+# readFile(inPath)
+# o = readFile(inPath)
+# print(d)
+# print(o)
 
-print("Bye bye World!")
+print("Bye bye World! infile.py")

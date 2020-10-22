@@ -6,6 +6,7 @@ inPath = "projects\\miniproject\\infile.txt"
 input = ""
 list1 = ""
 d = {}
+o = {}
 
 def readFile(file):
     print("Reading from file...")
@@ -43,12 +44,14 @@ def readFileV2(input):
             d[key] = value
             # print(f"{counter}. {line}")
             # counter = counter + 1
+        return d
+        # return line
 
-        return line
-
-# input = readFile(path)
+# input = readFile(inPath)
 # list1 = assignToList(input)
 # print(input.read())
 # print(list1)
 # print(dir(input))
+# o = readFileV2(inPath)
+# print(o)
 print("Bye bye World!")
