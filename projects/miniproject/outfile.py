@@ -1,5 +1,5 @@
 import os.path
-from infile import readFile
+from infile import readFile, assignToList, readFileV2
 
 print("Hello World!")
 
@@ -87,11 +87,26 @@ def templateInFile():
 }"""
     return content
 
-readFile(inPath)
+iList = ""
+# iList = readFile(inPath)
+iList = readFileV2(inPath)
 
-limit = input("Number of files > ")
+print("*** *** ***")
+# print(iList)
+
+for key in iList:
+    print(key)
+
+rList = ""
+# rList = assignToList(iList)
+print("### ### ###")
+# print(rList)
+
+
+
+# limit = input("Number of files > ")
 # createFile()
-number(limit)
+# number(limit)
 # counter = number()
 
 print("Bye bye World!")
