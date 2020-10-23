@@ -21,6 +21,8 @@ def fileDir(full_path):
     print(os.path.dirname(full_path))
 
 
+
+
 fileAtTerm()
 path = fullPath()
 pathNFilename(path)

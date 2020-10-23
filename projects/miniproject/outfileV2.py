@@ -1,4 +1,4 @@
-import os.path
+import os
 from infile import readFile
 
 print("Hello World! outfile.py")
@@ -16,6 +16,11 @@ def number(limit,iList):
     # print(f"Counter at {counter}.")
     # print(f"Limit at {limit}")
     # print(f"Counter at {word}.")
+
+    folderExist = os.path.isdir(outPath)
+
+    if(folderExist == False):
+        os.mkdir(outPath)
 
     # This is the loop for the number of files.
     # while counter < 10:
