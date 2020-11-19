@@ -1,0 +1,9 @@
+Objective:
+To visually see the filtered list of files.
+
+Steps
+1.  Create a script to search through a directory for keywords.
+2.  Look through the filenames.
+3.  Output the filtered filenames into a text file.
+
+Pseudocode
