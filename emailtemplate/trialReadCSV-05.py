@@ -29,11 +29,6 @@ convertThisDate = convert(thisdate)
 print(f'converted thisdate: {convertThisDate}')
 print(f'type of converted thisdate: {type(convertThisDate)}')
 
-finalDate = convertThisDate.strftime('%d/%m/%Y %H:%M:%S')
-
-print(f'finalDate: {finalDate}')
-print(f'#################')
-
 #   Output below
 #################
 # Jan 1, 2022, 12:00:00 AM
