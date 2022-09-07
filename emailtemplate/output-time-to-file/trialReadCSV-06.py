@@ -31,20 +31,6 @@ print(f'type of converted thisdate: {type(convertThisDate)}')
 
 finalDate = convertThisDate.strftime('%d/%m/%Y %H:%M:%S')
 
-#   Output below
-#################
-# Jan 1, 2022, 12:00:00 AM
-# thisdate: Jan 1, 2022, 12:00:00 AM
-# type of thisdate: <class 'str'>
-# converted thisdate: 2022-01-01 00:00:00
-# type of converted thisdate: <class 'datetime.datetime'>
-#################
-
-# Current issue is to convert the above into the format of dd/mm/yyyy HH:MM:SS
-# e.g.: 01/01/2022 00:02:00
-
-finalDate = convertThisDate.strftime('%d/%m/%Y %H:%M:%S')
-
 print(f'finalDate: {finalDate}')
 print(f'#################')
 
